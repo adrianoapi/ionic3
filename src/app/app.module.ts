@@ -5,6 +5,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { AlbumListPage } from '../pages/album-list/album-list';
+import { FormsModule } from '@angular/forms';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,17 +15,20 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    AlbumListPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    AlbumListPage
   ],
   providers: [
     StatusBar,
